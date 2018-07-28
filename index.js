@@ -13,5 +13,7 @@ function setThisWithApply(fn,thisValue,args){
 }
 
 function returnNewFunctionOf(functionToBeCopied, thisValue){
+  //Returns a function that has taught thisValue how to do the desired function
+  //Like a swim teacher hands back a kid that knows how to swim. Now the parent can say "swim"
   return functionToBeCopied.bind(thisValue);
 }
